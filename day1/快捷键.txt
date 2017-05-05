@@ -1,0 +1,19 @@
+ctrl +c 复制
+ctrl +v 粘贴
+ctrl +x	 剪切
+ctrl +z	 回退
+ctrl +s	 保存
+ctrl +f	 查找指定内容
+ctrl +a	 全选所有内容
+按住shift加home或end 或者->或<- 等待可以选中不同范围的文本
+
+home	 光标移到-》行首
+end	 光标移到-》行尾
+ctrl+home	光标移到-》文本开始位置
+ctrl+end	光标移到-》文本结束位置
+
+shift +tab	 回退一个tab
+shift +caps lock(大小写转换)	前进一个tab
+
+
+

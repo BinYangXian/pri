@@ -1,0 +1,43 @@
+﻿一、思考作业
+1. Collection   //是一个接口 
+
+和 Collections  //是一个类
+
+
+的区别。
+
+2. List, Set, Map是否继承自Collection接口? list set继承与 Collection Map不是
+
+3. ArrayList和Vector的区别。 Vector是线程安全的，也就是说是它的方法之间是线程同步的 （慢），而ArrayList是线程序不安全的，它的方法之间是线程不同步的（快）。
+
+4. HashMap
+hashMap通常性能比treeMap好。
+
+和Hashtable的区别
+线程安全，键和值不能为null
+
+二、编程题
+
+    1. 假如有以下email数据“aa@sohu.com,bb@163.com,cc@sina.com,..”现需要把     email中的用户部分（如aa）和邮件地址部分(如sohu.com)分离，分离后以键值对应的方式放入HashMap，并遍历打印map的键和值。
+提示：参考String split方法
+
+    2. 在一个Map中，记录了某学校每门课程的授课老师（key为课程名，value为老师名），请分析原有Map，创建一个新的Map，用来表示每个老师负责讲授哪些课程 新的Map的key应为老师的名字，value为一个Set，Set中的元素为课程的名字
+例如：
+原map ：
+   课程名key（String） 老师名value （String）
+   java         曾老师
+   数据库     曾老师
+   web         卢老师
+   体育         刘老师
+新map ：
+   老师名key（String） 课程名的集合value （Set<String>）
+   曾老师                             {java,数据库}
+   卢老师                             {web}
+   刘老师                             {体育} 
+
+思路分析1：
+    1）创建原map加入数据
+    2）把原map的所有值（老师）拿出来去重，得到所有的【老师的列表容器】
+    3）遍历【老师的列表容器】找到每一个老师，通过老师原map找对应当前老师的课程，把找到的课程装到set容器
+    4）定义新map，把老师和对应的课程容器装入新map
+ 

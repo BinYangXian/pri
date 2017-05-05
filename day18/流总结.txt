@@ -1,0 +1,63 @@
+﻿各种流的功能
+
+a)四个老大-提供最基本的输入输出用的功能
+InputStream
+0utputStream
+Reader
+Writer
+-通用的api
+read()字节
+read()字符
+read(byte[] buff)字节数组
+read(char[] buff)字符数组
+
+write
+...
+flush
+close
+
+b)节流流
+1）字节数组的节点流
+  BytearrayInputStream
+  BytearrayOutputStream
+2）文件的节点流-可以包装file-连接到文件-提供基本输入输出
+  FileInputStream
+  FileOutputStream
+  FileReader
+  FileReader
+
+c）处理流
+
+1）转换流
+InputStreamReader
+OutputStreamWriter
+增加功能：a）字节流转换为字符流 b）在转换的时候设置编码或解码的字符集
+
+2）缓冲流
+--》缓冲字节流
+BufferedInputStream
+BufferedOutputStream
+增加功能：a）增加输入输出缓冲区，减少与数据源的读写操作，提高性能
+
+--》缓冲字符流
+BufferedReader
+BufferedWriter
+增加功能：
+	a）增加输入输出缓冲区，减少与数据源的读写操作，提高性能
+	b）新增api：readline newLine  -》如果要使用新增api，不能面向超类型编程
+
+3）打印流
+PrintStream，PrintWriter
+增加功能：
+   a）把【程序中】【基本类型或引用类型的数据】以【字符数据】的方式输出到【数据源】-》可以方便用户查看程序的数据。
+   b）新增api：print，println  -》如果要使用新增api，不能面向超类型编程
+
+4）序列化的流
+  DataInputStream
+  DataOutputStream
+  ObjectInputStream
+  ObjectOutputStream
+  
+增加功能：
+   a）把【程序中】【基本类型或引用类型的数据】以【字节数据】的方式输出（序列化）到【数据源】-》可以方便存储程序的数据，或网络传输数据
+   b）新增api：write基本类型，writeUtf，writeObject,...read  

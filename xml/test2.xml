@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!-- 
+xml的标记-描述数据
+
+数据：李四，18，男，8000，"四川省"成都高新区<布鲁明顿广场>2-1002
+ -->
+ <personList>
+	 <!-- 
+	  字符实体：描述特殊数据
+	  -->
+	<person name="李四" age="18" sex="男" sal="8000" >
+		&quot;四川省&quot;成都高新区&lt;布鲁明顿广场&gt;2-1002
+	</person>
+	 <!-- 
+	  cdata：描述特殊数据
+	  -->
+  	<person name="李四" age="18" sex="男" sal="8000" >
+		<![CDATA["四川省"成都高新区<布鲁明顿广场>2-1002]]>
+	</person>
+  
+</personList>
+  

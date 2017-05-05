@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<users>
+		 <user name="刘德华" age="25" >
+		  成都春熙路
+		 </user>
+		 <user name="周杰伦" age="20" >
+		  成都盐市口
+		 </user>
+		 <user name="林志玲" age="17" >
+		  成都布鲁明顿
+		 </user>
+	</users>
+</root>

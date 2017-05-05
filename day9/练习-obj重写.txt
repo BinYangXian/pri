@@ -1,0 +1,12 @@
+练习：
+定义如下类
+User类
+
+属性：
+名字String
+地址String
+是否结婚boolean
+
+重写toString    把对象的  名字和地址的信息
+重写hashcode  以（名字加是否结婚）来判断内容相同
+重写equals    以（名字加是否结婚）来判断内容相同

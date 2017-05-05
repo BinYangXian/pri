@@ -1,0 +1,61 @@
+Java 多线程编程练习题
+一、选择题
+1．通过继承类开启线程，继承的父类是？
+A：Object  
+B：Runnable  
+C：Serializable  
+D： Thread  
+E: Exception
+答
+ 
+2．通过实现接口开启线程，实现那个接口来实现？
+A：Runnable   
+B：Throwable  
+C：Serializable  
+D：Comparable 
+E：Cloneable
+答：
+ 
+ 
+3．如果要一个线程等待一段时间后再自动恢复执行此线程，需要调用什么方法？
+A：wait  
+B：yield  
+C：join   
+D：sleep  
+E：stop  
+F：notify
+答：
+4.Runnable接口定义了如下哪些方法？
+A: start()
+B: stop()
+C: resume()
+D: run()
+E: suspend()
+答：
+5. 如下代码创建一个新线程并启动线程：
+Runnable target=new MyRunnable();
+Thread myThread=new Thread(target);
+问:如下哪些类可以创建target对象，并能编译正确？
+A: public class MyRunnable extends Runnable { public void run(){} }
+B: public class MyRunnable extends Object { public void run() {} }
+C: public class MyRunnable implements Runnable {public void run() {}}
+D: public class MyRunnable extends Runnable {void run() {}}
+E: public class MyRunnable implements Runnable { void run() {}}
+f: public class MyRunnable extends Thread {public void run() {}}
+答：
+二、问答题
+线程和进程有什么区别？
+
+Java创建线程并开启的方式有哪些？
+
+三、编程题
+1．编写多线程应用程序，模拟多个人通过一个山洞的模拟。这个山洞每次只能通过一个人
+，每个人通过山洞的时间为5秒（sleep），随机生成3个人，
+同时准备过此山洞，显示一下每次通过山洞人的姓名及年龄，
+以及过洞开始时间和结束时间-(字符串时间格式：15时30分20秒150毫秒)。
+过山洞的过程：   
+    1）大路上走，可以同时多个人进行
+    2）经过山洞，只能同时一个人走
+    3）经过立交桥，可以同时多个人进行
+提示：根据提示知道洞里只能有一个人，所以所有人的开始时间和结束时间不能冲突。
+可使用synchronized关键字实现

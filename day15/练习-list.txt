@@ -1,0 +1,18 @@
+List基础练习
+
+1、定义一个Person类 name 和 age两属性
+2、创建n(假设为5)个person对象，（
+name 柳岩1 age 10
+name 柳岩2 age 20
+name 柳岩3 age 30
+name 柳岩4 age 40
+name 柳岩5 age 50
+）
+3、分别添加到list容器中
+4、删除容器里的【name 柳岩5 age 50】元素
+5、把第4个位置的元素设置为新的Person对象（name 柳岩444 age  44），
+6、把list容器中所有人的【名字】打印到控制台
+a）普通for
+b）增强for
+c）Iterator
+

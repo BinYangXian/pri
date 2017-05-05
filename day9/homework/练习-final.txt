@@ -1,0 +1,94 @@
+﻿1. （final 属性的初始化）*有如下代码
+1) class MyClass{
+2)     final int value;
+3)     public MyClass(){}
+4)     public MyClass(int value){
+5)         this.value = value;
+6)     }
+7) }
+8) public class TestMain{
+9)     public static void main(String args[]){
+10)         MyClass mc = new MyClass(10);
+11)         System.out.println(mc.value);
+12)     }
+13) }
+c
+
+A. 编译通过，输出10
+B. 编译不通过，把第2 行改为final int value = 10;
+C. 编译不通过，把第3 行改为public MyClass(){ value = 10; }
+
+2. （final 变量）*有如下代码
+class MyClass {
+    public void printValue(final int value){
+        System.out.println(value);
+    }
+    public void changeValue(int value){
+        value = value * 2;
+        System.out.println(value);
+    }
+}
+public class TestMain{
+    public static void main(String args[]){
+        MyClass mc = new MyClass();
+        int value = 5;
+        final int fvalue = 10;
+        mc.printValue(value); //1
+        mc.printValue(fvalue); //2
+        mc.changeValue(value); //3
+        mc.changeValue(fvalue);//4
+    }
+}
+a
+
+A. 编译通过
+B. //1 出错
+C. //2 出错
+D. //3 出错
+E. //4 出错
+
+3. （final 修饰引用）*有如下代码
+class MyValue{
+    int value;
+}
+public class TestFinal{
+    public static void main(String args[]){
+        final MyValue mv = new MyValue();
+        mv.value = 100;
+        //1
+        System.out.println(mv.value);
+    }
+}
+c
+
+A. 编译不通过
+B. 编译通过。在//1 处加上：mv.value = 200; 则编译不通过
+C. 编译通过。如果在//1 处加上：mv = new MyValue(); 则编译不通过。
+
+
+4. （final 方法，方法覆盖）有如下代码
+class Super{
+    public final void m1(){
+        System.out.println("m1() in Super");
+    }
+    public void m1(int i){
+        System.out.println("m1(int) in Super");
+    }
+}
+class Sub extends Super{
+    public void m1(int i){
+        System.out.println("m1(int) in Sub");
+    }
+    public void m1(double d){
+        System.out.println("m1(double) in Sub");
+    }
+}
+public class TestMain{
+    public static void main(String args[]){
+        Sub s = new Sub();
+        s.m1();//m1() in Super
+        s.m1(10);//m1(int) in Sub
+        s.m1(1.5);//m1(double) in Sub
+    }
+}
+以上程序是否能编译通过？如果可以，输出运行的结果；如果不可以，应该怎样修改？

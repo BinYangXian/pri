@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+描述数据：
+【用户信息】
+名字     工作    年龄
+刘德华  演戏    20
+科比      演戏    25
+任良飞  炒股    18
+ -->
+<userList>
+	<user name="刘德华" job="演戏" age="20"/>
+	<user name="科比" job="演戏" age="25"/>
+	<user name="任良飞" job="炒股" age="18"/>
+</userList>

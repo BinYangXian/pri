@@ -1,0 +1,7 @@
+文件分割及合并（文本及图片）
+    a）提供一个方法，把传入的大文件分割为每份固定大小的小文件，
+再把所有小文件的路径作为数组返回
+例如：eclipse.exe(120m) 分为-》elcipse_1.exe(50m),elcipse_2.exe(50m),elcipse_3.exe(20m)
+    b）提供一个方法，可以接收多个合并的子文件路径和合并后大文件路径名字，
+把多个子文件内容合并到一个新的大文件中。
+例如：elcipse_1.exe(50m),elcipse_2.exe(50m),elcipse_3.exe(20m)->eclipse.exe(120m) 

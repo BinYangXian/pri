@@ -1,0 +1,18 @@
+4、电子邮件地址验证
+    a）格式：用户@地址;
+    b）用户：字母数字下划线组成
+    c）地址：字母和和数字小数点组成
+
+.....
+正确数据：
+
+12580@qq.com
+
+214wfsaf
+9090990@vip.qq.com
+
+fsaf
+7474741@sina.com.cn
+sadsff
+yanfen@163.com
+madong@gmail.com

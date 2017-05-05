@@ -1,0 +1,137 @@
+第2章 标识符、关键字和数据类型
+！！！需要写出选题原因
+一．选择题
+
+1.下列不合法的标识符是()。
+
+A. _boy B. boy C. $boy D. 6boy
+
+
+2.下列合法的标识符是( )。
+
+A. #boy B. int C. Int D. &好
+
+
+3．下列变量定义错误的是( )。
+
+A. char c=65555 B. float f=1.0f C. double d=9.0d
+D. double d=1.0
+
+
+4.下列类型不属于整数类型的是( )。
+
+A. byte B.short C. long D.boolean
+
+
+5.下列程序运行的结果是( )。
+
+public class A {
+
+public static void main(String args[])
+
+{
+
+int i=50;
+
+float y=40;
+
+y=i;
+
+System.out.println(y);
+
+}
+
+}
+
+A.40 B. 40.0 C. 50 D.50.0
+
+
+6.下列程序运行的结果是( )。
+
+public class A {
+
+public static void main(String args[]) {
+
+int i=50;
+
+float y=40;
+
+i=y;
+
+System.out.println(i);
+
+}
+
+}
+
+A.40 B. 40.0 C. 50 D.编译出错
+
+
+
+7．以下程序的运行结果为( )。
+
+public class A {
+
+public static void main(String a[]) {
+
+int x=2;
+
+int y=3;
+
+System.out.println(x + y);
+
+System.out.println("x+y=" + x + y);
+
+System.out.println("x+y=" +（x + y）);
+ System.out.println(x + y + "x +y");
+
+}
+
+}
+
+A. 23 B. 5 C. x+y D. 2+3=5
+
+E. x+y=23 F. x+y=5 G. “x+y” H. 5 x+y
+
+I. 23x+y J. x+y x+y K. 2+3=23 L. x+y5
+
+
+8. 以下程序的运行结果为( )。
+
+public class A {
+
+public static void main(String a[]) {
+
+System.out.print("good");
+
+System.out.println();
+
+System.out.println("Morning");
+
+}
+}
+
+A. goodMorning
+
+B. "goodMorning"
+C. good
+Morning
+D. good Morning
+
+9. 现有一个int类型的整数和一个double类型的数进行加法运算，则得到的结果类型
+为 ( ) 类型。
+
+A．int B. double C. float D. long
+
+10.下列程序运行的结果是（）
+public class A {
+public static void main(String args[])
+{
+byte i=(byte)(-130);
+System.out.println(i);
+}
+
+}
+
+A.127 B.-130 C.130 D.126
+

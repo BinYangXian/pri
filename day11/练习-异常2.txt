@@ -1,0 +1,40 @@
+二、问答题
+1、说明java中异常处理的两种方式
+2、Error和Exception，RuntimeException的联系与区别
+3、Throwable是一个类还是一个接口？
+4、如果catch是两个异常，一个是父类、一个是子类。这两个异常的catch顺序如何确定？
+5、finally里面一般放置什么代码？
+6、方法重写时，子类声明异常能否超出父类的范围？
+7、下面的代码，有什么问题？请解释原因：
+class A{
+  public void method() throws IOException{
+}
+}
+class B extends A{
+public void method() throws Exception{
+}
+}
+8、分别解释说明如下异常-【查api】
+    1）Exception
+    2）RuntimeException
+    3）NullPointerException
+    4）ClassCastException
+    5）FileNotFoundException
+    6）IOException
+    7）ArraryIndexOutOfBoundsException
+    8）IndexOutOfBoundsException
+    9）InputMismatchException
+
+三、编码题
+
+（B）利用throws ,throw ,try catch和自定义异常解决如下1，2需求，并在main方法测试
+
+1）定义方法完成，用户控制台输入字符文件路径，把对应字符文件的所有内容（不用考虑中文乱码）打印到控制台。
+a）如果遇到FileNotFoundException：则打印提示（路径错误）
+b）如果遇到IOException：不用处理直接抛给上级
+
+2）定义方法public static int inputInt();
+返回值：用户输入的整数
+方法内部使用Scanner 读取用户控制台输入整数信息 ！功能描述：用户键盘输入一个整数，如果输入不能转换为整数的字符串，处理异常（try catch）继续让用户输入（循环），直到输入正常整数才返回整数。
+注意：如果使用同一个Scanner 对象进行输入，遇到输入不匹配异常，不会清除对象里读取的缓存，需要使用对象的next来清除缓存，或者循环里
+用不同的Scanner 对象进行输入。

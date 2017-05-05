@@ -1,0 +1,86 @@
+选择题，不能去运行代码，自己判断，写出选题原因。
+
+练习
+1. （static 属性）有如下代码
+class MyClass{
+    static int a;
+    int b;
+}
+public class TestMain{
+    public static void main(String args[]){
+        MyClass mc1 = new MyClass();
+        MyClass mc2 = new MyClass();
+        mc1.a = 100;
+        mc1.b = 200;
+        mc2.a = 300;
+        mc2.b = 400;
+        System.out.println(mc1.a);
+        System.out.println(mc1.b);
+        System.out.println(mc2.a);
+        System.out.println(mc2.b);
+    }
+}
+请写出程序输出结果。
+300
+200
+300
+400
+
+2. （静态成员）有如下代码
+class MyClass {
+    int a;
+    static int b;
+    void fa(){
+    }
+    static void fb(){
+    }
+    public void m1(){
+        System.out.println(a); //1
+        System.out.println(b); //2
+        fa(); //3
+        fb(); //4
+    }
+    public static void m2(){
+        System.out.println(a); //5
+        System.out.println(b); //6
+        fa(); //7
+        fb(); //8
+    }
+}
+请问哪些行会编译出错？ e g
+A. //1
+B. //2
+C. //3
+D. //4
+E. //5
+F. //6
+G. //7
+H. //8
+
+3. （静态属性）有如下代码
+class MyClass {
+    static int count = 0;
+    public MyClass(){
+        count++;
+        System.out.println(count);
+    }
+}
+public class TestMain{
+    public static void main(String args[]){
+        MyClass mc1 = new MyClass();
+        MyClass mc2 = new MyClass();
+        MyClass mc3 = new MyClass();
+    }
+}
+请写出该程序运行时输出的结果。
+1 
+2
+3
+
+4. （static）*以下哪些论述是正确的 a c d
+
+A. 静态方法中不能调用非静态方法
+B. 非静态方法中不能调用静态方法
+C. 静态方法能够用类名直接调用
+D. 可以在不产生任何一个对象的情况下调用静态方法
+E. 静态方法里可以使用this

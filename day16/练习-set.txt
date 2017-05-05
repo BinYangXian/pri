@@ -1,0 +1,15 @@
+
+1、定义一个Teacher类 name 和 age两属性
+2、循环创建n(假设为20)个Teacher对象，（
+name 林志玲1 age 10
+name 林志玲2 age 20
+name 林志玲3 age 10
+name 林志玲4 age 20
+name 林志玲5 age 10
+.......
+）
+3、分别添加到set容器中
+4、删除set容器的元素(name 林志玲3 age 10)
+提示！删除的时候，根据对象内容相同认为是相同对象，怎么判断对象内容相同？重写object某方法！
+5、两种方式遍历set对象
+

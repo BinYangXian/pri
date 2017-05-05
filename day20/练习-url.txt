@@ -1,0 +1,10 @@
+1）有urls.txt文件，内容如下（一行一个url）
+---------------
+https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/css/super_min_18207913.css
+https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png
+https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/base/loading_72b1da62.gif
+https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1477364140&di=42cf2e0c61ad184f66d3ba6908a8d954&src=http://c.hiphotos.baidu.com/image/pic/item/0dd7912397dda1449fad6f63b6b7d0a20df486be.jpg
+
+---------------
+利用URL类把上述文件里的所有的url对应的文件，下载到用户输入文件夹中。
+名字（使用url里最后一个/后的字符串）。

@@ -1,0 +1,35 @@
+一、思考作业
+1. Collection 和 Collections的区别。
+Collection:接口
+Collections：类
+2. List, Set, Map是否继承自Collection接口?
+1
+3. ArrayList和Vector的区别。
+后者线程安全
+4. HashMap和Hashtable的区别
+后者线程安全，并且不允许为空
+二、编程题
+
+    1. 假如有以下email数据“aa@sohu.com,bb@163.com,cc@sina.com,..”现需要把     email中的用户部分（如aa）和邮件地址部分(如sohu.com)分离，分离后以键值对应的方式放入HashMap，并遍历打印map的键和值。
+提示：参考String split方法
+
+    2. 在一个Map中，记录了某学校每门课程的授课老师（key为课程名，value为老师名），请分析原有Map，创建一个新的Map，用来表示每个老师负责讲授哪些课程 新的Map的key应为老师的名字，value为一个Set，Set中的元素为课程的名字
+例如：
+原map ：
+   课程名key（String） 老师名value （String）
+   java         曾老师
+   数据库     曾老师
+   web         卢老师
+   体育         刘老师
+新map ：
+   老师名key（String） 课程名的集合value （Set<String>）
+   曾老师                             {java,数据库}
+   卢老师                             {web}
+   刘老师                             {体育} 
+
+思路分析1：
+    1）创建原map加入数据
+    2）把原map的所有值（老师）拿出来去重，得到所有的【老师的列表容器】
+    3）遍历【老师的列表容器】找到每一个老师，通过老师原map找对应当前老师的课程，把找到的课程装到set容器
+    4）定义新map，把老师和对应的课程容器装入新map
+ 

@@ -1,0 +1,15 @@
+访问修饰符，封装,继承（利用继承设计类）
+
+安卓手机类
+数据：屏幕大小，cpu
+功能：打电话，发短信，root刷机，google now
+
+苹果手机类
+数据：屏幕大小，cpu
+功能：打电话，发短信，face time，imessage
+
+iphone 6s类
+数据：屏幕大小，cpu
+功能：打电话，发短信，face time，imessage，指纹，3d touch
+
+--》要求屏幕大小和cpu不能更改。

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+【部门信息】
+部门名            部门地址            		部门电话
+开发部         <成都布鲁明顿>      110
+行政部             <春熙路>        119
+市场部             <盐市口>        120
+【员工信息】
+员工名        员工性别        员工所在部门
+刘德华        男                    开发部
+李小龙        男                    开发部
+成龙            男                    市场部
+林志玲        女                    市场部
+
+ -->
+<datas>
+	<deptDatas>
+		<dept name="开发部" phone="110"><![CDATA[<成都布鲁明顿>]]></dept>
+		<dept name="行政部 " phone="119"><![CDATA[<春熙路>]]></dept>
+		<dept name="市场部" phone="120"><![CDATA[ <盐市口>]]></dept>
+	</deptDatas>
+	<empDatas>
+		<emp name="刘德华" sex="男" atDept="开发部"></emp>
+		<emp name="李小龙 " sex="男" atDept="开发部"></emp>
+		<emp name="成龙" sex="男" atDept="市场部"></emp>
+		<emp name="林志玲" sex="男" atDept="市场部"></emp>
+	</empDatas>	
+</datas>

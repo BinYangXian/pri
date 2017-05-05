@@ -1,0 +1,82 @@
+java三大体系
+	javase：开发桌面程序的
+	javame：开发移动端程序的
+	javaee：开发企业服务端程序
+	
+java相关环境
+	jvm：java虚拟机，可以运行java程序
+	jre：java程序运行环境，包含jvm，增加java程序运行的库
+	jdk：java程序开发环境，包含jre，增加开发的功能-javac ，jar，javap...
+
+java程序开发的步骤
+ 1)编写.java结尾的源代码
+ --》nodepad
+ 2)编译java文件为class文件
+ --》javac  java文件名.java 
+ 3)运行class文件
+ --》java class文件名（没有后缀）
+
+
+window环境变量
+path：方便在命令行里使用java和javac程序 -配置path-》把jdk的bin目录配置到path中
+
+helloworld的模版
+
+public class  类名（与文件名相同）{
+
+	public static void main(String args[]){
+	
+		//程序执行的多句代码
+	}
+}
+
+语法注意点-》必须满足
+1）标点符号-英文状态输入
+2）字母区分大小写
+3）每一句代码都是以分号结束
+
+编程规范-》建议
+1）成对编程
+2）合理缩进
+3）每行一句代码
+
+helloworld的模版java文件注意点
+
+1）java文件可以编写多个类class
+2）只能有一个class是public修饰的
+3）public修饰的类必须和java文件名相同
+
+
+变量
+作用：存储java程序需要用到的数据。
+java变量的使用步骤
+1）定义变量
+语法：
+数据类型  变量名1[=值1],变量名2[=值2]...;
+
+2）变量赋值
+
+语法：
+	变量名=值;
+
+3）使用变量的值
+语法：通过变量名代替对应的值
+
+数据类型
+
+数据类型
+1）基本类型（8种）
+	a）数字类型
+		x）整数	
+					占用空间		表达范围
+			byte	1字节			-128到127
+			short	2字节			正负3万多
+			int		4字节			正负21亿多
+			long	8字节			正负19位数多
+		x）浮点数 
+	b）字符类型 char                2字节		0-65535（unicode（utf-16））
+	c）布尔类型 boolean
+	
+2）引用类型
+
+

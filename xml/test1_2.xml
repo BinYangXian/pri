@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!-- 
+
+xml的标记-描述数据
+数据：
+
+张三，18，男，5000，四川省成都高新区布鲁明顿广场2-1001 
+
+李四，18，男，8000，四川省成都高新区布鲁明顿广场2-1002
+李四有两个朋友-》通过子标记来描述数据
+                 柳岩      18岁        模特
+                 刘德华    20岁        演员
+                 
+李冰冰，17，女，5000               
+ -->
+ <personList>
+	 <person name="张三" age="18" sex="男" sal="5000" >
+		四川省成都高新区布鲁明顿广场2-1001
+	 </person>
+	 <person name="李四" age="18" sex="男" sal="8000">
+	 	<addr>四川省成都高新区布鲁明顿广场2-1002</addr>
+	 	<friend>
+	 		<name>柳岩</name>
+	 		<age>18岁</age>
+	 		<job>模特</job>
+	 	</friend>
+		<friend>
+	 		<name>刘德华 </name>
+	 		<age>20岁</age>
+	 		<job>演员</job>
+	 	</friend>
+	 </person>
+
+	 <person name="李冰冰" age="17" sex="女" sal="5000"/>
+	 
+	 <!-- 
+	 <a>
+	  <b>
+	 </a></b>
+	  -->
+ </personList>

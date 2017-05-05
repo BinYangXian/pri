@@ -1,0 +1,18 @@
+3、用dom解析把如下xml文件内容
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<users>
+		 <user name="刘德华" age="25" >
+		  成都春熙路
+		 </user>
+		 <user name="周杰伦" age="20" >
+		  成都盐市口
+		 </user>
+		 <user name="林志玲" age="17" >
+		  成都布鲁明顿
+		 </user>
+	</users>
+</root>
+解析之后把所有年龄大于18的人的信息存储在List<User>对象中，
+User类：有三个成员变量（String name，int age String addr）
+并遍历输出list里所有人的名字。

@@ -1,0 +1,11 @@
+
+1）编写java源代码-.java结尾的文本文件
+--》记事本，notepad....
+
+2）编译java文件为class文件（jvm需要运行class文件）
+--》命令行
+  javac  java文件名.java
+
+3）jvm运行class文件
+--》命令行
+  java  class文件名（没有后缀）
